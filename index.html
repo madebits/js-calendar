@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Calendar Enter Year</title>
+<style>
+<!--
+h2 {font-family: Verdana; color: #000066; font-size: 14pt;}
+body {font-family: Verdana; font-size: 10pt;}
+ -->
+</style>
+<script src="/start.js"></script>
+<script src="calendar.js"></script>
+</head>
+<body bgcolor="#ffffff">
+<h2>Calendar</h2>
+<script>generate();</script>
+<form name="calendar">
+<table id="head" border="0"><tr><td>
+<p>Enter a year: <input type="text" size="4" maxlength="4" name="year" value="">&nbsp;<input type="button" value="View Calendar" name="view" onClick="generateCal();">&nbsp;&nbsp;
+<input type="button" value="<<" onClick="next(0)">&nbsp;<input type="button" value="[o]" onClick="setYear();generateCal();">&nbsp;<input type="button" value=">>" onClick="next(1)">
+</td><td>
+<font size="-2">[ <a href="#"; onClick="printContentPage(); return false;">Print</a> ]</font><br>
+<font size="-2">[ <a href="#"; onClick="generateActiveX(); return false;">Show Microsoft's Calendar</a> ]</font>
+</td></tr></table>
+</form>
+<iframe FRAMEBORDER="0" name="show_f" src="" width=570 height="350"></iframe>
+<script src="input.js"></script>
+</body>
+</html>
